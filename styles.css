@@ -1,0 +1,122 @@
+*{
+    margin : 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero_section{
+    background: url(/images/heroSectionBackground.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 60vh;
+}
+.hero_sec_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 16px 48px;
+}
+
+.hero_sec_nav a{
+    text-decoration: none;
+    color: white;
+
+}
+.nav_menu_container{
+    display: flex;
+    gap: 20px;
+}
+
+.nav_menu_container .user_icon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: solid 1px white;
+    display: none;
+}
+
+.hero_sec_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: calc(60vh - 60px);
+}
+
+.hero_sec_logo{
+    width: 200px;
+    height: auto;
+}
+
+.hero_sec_title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.hero_sec_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+    width: 60%;
+    border-radius: 10px;
+    
+}
+
+.input_loc,
+.input_search{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.input_loc{
+    width: 35%;
+    border-right: 2px solid #e0e0e0;
+}
+.input_search{
+    width: 65%;
+}
+
+@media only screen and (max-width: 600px){
+    .nav_menu_container .user_icon{
+        display: flex;
+    }
+    .link{
+        display: none;
+    }
+    .hero_sec_nav{
+        padding: 16px;
+    }
+    .hero_section{
+        min-height: 80vh;
+    }
+    .hero_sec_input_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input_loc,
+    .input_search{
+        padding: 15px;
+        border-radius: 10px;
+        width: 95%;
+
+    }
+    .hero_sec_container{
+        min-height: calc(80vh - 60px);
+    }
+    .hero_sec_title{
+        font-size: 20px;
+        width: 95%;
+    }
+}
