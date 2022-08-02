@@ -1,3 +1,3 @@
 # this is a clone 
-hello this pratham  
-hello this is ai
+ this is zomato landing page clone practise project
+ 
